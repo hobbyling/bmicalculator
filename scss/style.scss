@@ -1,0 +1,233 @@
+.border-ideal{ border-left: 7px solid #86D73F;}
+.border-underWeight{ border-left: 7px solid #31BAF9;}
+.border-overWeight{ border-left: 7px solid #FF982D;}
+.border-mildObesity{ border-left: 7px solid #FF6C02;}
+.border-moderateObesity{ border-left: 7px solid #FF6C02;}
+.border-severeObesity{ border-left: 7px solid #FF1200;}
+
+.circle-ideal{ border: 6px solid #86D73F; color: #86D73F};
+.circle-underWeight{ border: 6px solid #31BAF9; color: #31BAF9;}
+.circle-overWeight{ border: 6px solid #FF982D; color: #FF982D;}
+.circle-mildObesity{ border: 6px solid #FF6C02; color: #FF6C02;}
+.circle-moderateObesity{ border: 6px solid #FF6C02; color: #FF6C02;}
+.circle-severeObesity{ border: 6px solid #FF1200; color: #FF1200;}
+
+.bg-ideal{ background: #86D73F;}
+.bg-underWeight{ background: #31BAF9;}
+.bg-overWeight{ background: #FF982D;}
+.bg-mildObesity{ background: #FF6C02;}
+.bg-moderateObesity{ background: #FF6C02;}
+.bg-severeObesity { background: #FF1200;}
+
+.ideal{ color: #86D73F;}
+.underWeight{ color: #31BAF9;}
+.overWeight{ color: #FF982D;}
+.mildObesity{ color: #FF6C02;}
+.moderateObesity{ color: #FF6C02;}
+.severeObesity { color: #FF1200;}
+
+body{
+  background: #F5F5F5;
+  color: #4A4A4A;
+}
+
+header{
+  padding: 70px 0;
+  background: #424242;
+  height: 300px;
+
+  .logo{
+    background: url(../img/BMICLogo.png) no-repeat;
+    background-position: center center;
+    // margin-right: 97px;
+  }
+
+
+  label{
+    color: #fff;
+  }
+
+  input.form-control {
+    border: 2px solid #FFD366;
+    background: rgba(255,255,255,0.18);
+    color: rgba(255,255,255,1);
+  }
+
+  .btnDiv{
+    padding: 15px;
+    text-align: center;
+
+    .resultBtn{
+      display: none;
+      background: #FFD366;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      border: 2px solid #FFD366;
+      padding: 45px 20px;
+      margin: auto;
+      cursor: pointer;
+
+      &:hover{
+        border: 2px solid #FFD366;
+        background: none;
+        color: #FFD366;
+      }
+
+      &.active{
+        display: inline-block;
+      }
+    }
+
+    .conclusion {
+      text-align: center;
+
+      &.active{
+        display: block;
+      }
+
+      .conclusionCircle{
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        border-radius: 50%;
+        text-align: center;
+        padding: 25px 0;
+
+        .bmi{
+          font-size: 32px;
+
+        }
+
+        .title{
+          font-size: 14px;
+          display: block;
+          margin-top: -10px;
+        }
+
+        a{
+          position: absolute;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          border: 3px solid #4A4A4A;
+          left: calc(50% + 20px);
+        }
+      }
+      .comment{
+        display: block;
+        font-size: 30px;
+        margin-left: 5px;
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
+
+.history{
+  padding: 48px 0 100px 0px;
+
+
+  h2{
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .clear{
+    text-align: right;
+  }
+
+  .record{
+    width: 100%;
+    height: 62px;
+    margin: auto;
+    background: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 10px;
+
+    .title{
+      font-size: 12px;
+      vertical-align: text-top;
+      margin-right: 5px;
+    }
+
+    .recordComment{
+      text-align: left;
+    }
+
+    .recordDate{
+      font-size: 12px;
+      vertical-align: middle;
+      text-align: right;
+    }
+  }
+}
+
+.footer{
+  background: #FFD366;
+  height: 90px;
+
+  img{
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .history{
+    .record{
+      padding: 5px 0;
+      height: 70px;
+      .title{
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px){
+  header{
+    height: auto;
+    padding: 30px 0;
+    .logo{
+      height: 100px;
+      background-size: contain;
+    }
+  }
+
+  .history{
+
+    .recordList{
+      .record{
+        height: auto;
+
+        .title{
+          color: #bfbfbf;
+        }
+
+        .recordComment{
+          text-align: center;
+          font-weight: 500;
+          font-size: 26px;
+          margin: 10px 0;
+        }
+
+        .wei{
+          border-left: 1px solid #bfbfbf;
+          border-right: 1px solid #bfbfbf;
+        }
+
+        .recordDate{
+          text-align: center;
+          margin: 10px 0;
+          color: #bfbfbf;
+        }
+      }
+    }
+  }
+}

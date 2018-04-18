@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI calculator</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="logo col-12 col-sm-3"></div>
+        <form class=" col-12 col-sm-6">
+          <div class="inputForm">
+            <div class="form-group">
+              <label for="height">身高 cm</label>
+              <input type="number" class="form-control" id="height" placeholder="請輸入身高">
+            </div>
+            <div class="form-group">
+              <label for="weight">體重 kg</label>
+              <input type="number" class="form-control" id="weight" placeholder="請輸入體重">
+            </div>
+          </div>
+        </form>
+        <div class="btnDiv col-12 col-sm-3">
+          <div class="resultBtn active">看結果</div>
+
+          <!-- <div class="conclusion">
+            <div class="conclusionCircle circle-ideal">
+              <span class="bmi">21.60</span>
+              <span class="title">BMI</span>
+
+              <a href="" class="bg-ideal resetBtn"><img src="img/icons_loop.png" alt=""></a>
+            </div>
+            <div class="comment ideal">理想</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="history">
+    <div class="container">
+      <div class="row">
+        <h2 class="offset-3 col-6 offset-sm-2 col-sm-8">BMI紀錄</h2>
+        <div class="col-3 col-sm-2 clear">
+          <button class="btn btn-outline-info clearBtn">清空</button>
+        </div>
+      </div>
+      <div class="recordList">
+        <!-- <div class="record row justify-content-between border-ideal">
+          <span class="col-1 recordComment">理想</span>
+          <span class="bmi col-3">
+            <span class="title">BMI</span>
+            <span class="result recordBmi">21.60</span>
+          </span>
+          <span class="col-3">
+            <span class="title">weight</span>
+            <span class="result recordWeight">70kg</span>
+          </span>
+          <span class="col-3">
+            <span class="title">height</span>
+            <span class="result recordHeight">180cm</span>
+          </span>
+          <span class="col-2 recordDate">06-09-2017</span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-expand-sm fixed-bottom footer justify-content-center">
+    <img src="img/BMICLogo-black.png" alt="">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="js/bootstrap/bootstrap.js"></script>
+  <script src="js/all.js"></script>
+</body>
+</html>
