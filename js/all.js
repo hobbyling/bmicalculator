@@ -89,8 +89,8 @@ function addData(e){
 function updateList(items){
   var str = '';
   var color = '';
-  var len = items.length;
-  for(var i=0; i<len; i++){
+  var len = items.length-1;
+  for(var i=len; i>-1; i--){
     if(items[i].bmi < 18.5){
       color = 'border-underWeight';
     }else if (18.5 <= items[i].bmi && items[i].bmi < 25) {
